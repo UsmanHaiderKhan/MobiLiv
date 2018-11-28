@@ -65,6 +65,13 @@ header nav ul li a {
     background-position: center;
 }
 
+.img3 {
+    background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../../images/backimg3.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 /*.img3 {
     background-image: url('../../images/img (16).jpg');
     background-size: cover;
@@ -461,4 +468,74 @@ h2 {
     z-index: 100;
     margin-bottom: 7%;
     margin-left: 50%;
+}
+
+.back-ground-text p {
+    background-color: #F6F6F6;
+    padding: 3%;
+}
+
+.live-conn h1 {
+    letter-spacing: 20px;
+    font-size: 4rem;
+    font-weight: 500
+}
+
+#services {
+    background-color: #F6F6F6;
+    height: auto;
+}
+
+#best-skills {
+    background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../../images/BestSkills/bestback.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.cog-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.text-adj {
+    margin-left: 7%;
+}
+
+.port-folio {
+    font-family: ProximaNova SemiBold;
+    letter-spacing: 10px;
+    font-weight: 500
+}
+
+.p-goal-btn {
+    border: 1px solid #3cb878;
+    border-radius: 21px;
+    padding: 13px;
+    width: 150px;
+    background: transparent;
+    color: #3cb878;
+}
+
+#clients {
+    background-color: #F6F6F6;
+    height: auto;
+}
+
+.web-color {
+    color: #8F9CB3;
+}
+
+.weblight {
+    color: #BAC6D5;
+}
+
+.icon-size {
+    font-size: 25px !important
+}
+
+.flex-client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
