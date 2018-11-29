@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ani</title>
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            margin: 300px auto 0;
+            width: 1000px;
+        }
+
+            .container .box {
+                width: 25%;
+                float: left;
+            }
+
+                .container .box .chart {
+                    position: relative;
+                    width: 110px;
+                    height: 110px;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 30px;
+                    line-height: 110px;
+                }
+
+                .container .box canvas {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+
+
+
+        #imagesMain {
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .imagebox {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            float: left;
+            margin: 10px;
+        }
+
+            .imagebox img {
+                vertical-align: middle;
+                height: 300px;
+                width: 300px;
+            }
+
+        .caption {
+            transition: .5s ease;
+            opacity: 0.5;
+            position: absolute;
+            width: 98%;
+            height: 99%;
+            left: 53%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .imagebox:hover .caption {
+            opacity: 0.6;
+            text-align: justify;
+            padding: 30px;
+        }
+
+        .text {
+            margin-top: 25%;
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="imagesMain">
+        <div class="imagebox">
+            <img src="http://lorempixel.com/output/nature-q-c-300-300-4.jpg">
+            <div class="caption">
+                <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                <hr class="mr-auto ml-auto" style="border: 1px solid #ffffff; width: 50px" />
+                <a href="#" class="fa fa-eye fa-lg bg-white p-2 r-goal"></a>
+            </div>
+        </div>
+        <div class="imagebox">
+            <img src="http://lorempixel.com/output/nature-q-c-300-300-4.jpg">
+            <div class="caption">Questa e' una prova</div>
+        </div>
+        <div class="imagebox">
+            <img src="http://lorempixel.com/output/nature-q-c-300-300-4.jpg">
+            <div class="caption">Questa e' una prova</div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="chart" data-percent="73" data-scale-color="#3cb878" data-bar-Color="#3cb878">73%</div>
+        </div>
+        <div class="box">
+            <div class="chart" data-percent="86" data-track-Color="#3cb878">86%</div>
+        </div>
+        <div class="box">
+            <div class="chart" data-percent="65">65%</div>
+        </div>
+        <div class="box">
+            <div class="chart" data-percent="70">70%</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="Bootstrap4/js/jquery.easypiechart.js"></script>
+    <script>
+        $(function () {
+            $('.chart').easyPieChart({
+                //your options goes here
+
+            });
+        });
+    </script>
+    <!--<div style="background: #000000;">
+        <h2 style="color: aliceblue">usman</h2>
+        <div class="my-progress-bar"></div>
+    </div>
+    <script type="text/javascript">
+
+                $(document).ready(function () {
+                    var progress_circle = $(".my-progress-bar").gmpc({
+                        line_width: 12,
+                        color: "#ff0",
+                        starting_position: 50,
+                        percent: 0,
+                        percentage: true
+
+                    }).gmpc('animate', 80, 3000);
+
+                });
+            </script>-->
+</body>
+</html>
