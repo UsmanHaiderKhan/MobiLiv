@@ -1,15 +1,65 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,800);
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
+/*================================= Font Faces Start ================================*/
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../../Fonts/MyriadPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('../../Fonts/Proxima Nova Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../../Fonts/ProximaNova-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('../../Fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../../Fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../../Fonts/Poppins-Bold.ttf') format('truetype');
+}
+/*==================================Font Face Ended==================================*/
+
 *, html, body {
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
+.top-nav-collapse {
+    background-color: #24355c;
+}
 /*.navbar-collapse {
     background-color: #24355c;
 }*/
 
+
+.nav-color {
+    background-color: #0A0E18;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../../images/Arrows/left-arrow.png') !important;
+    color: white;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../images/Arrows/right-arrow.png') !important;
+    color: white;
+}
 
 body {
     overflow-x: hidden;
@@ -54,6 +104,14 @@ header nav ul li a {
     color: white !important;
 }
 
+.nav-pixel {
+    margin-right: 3rem;
+}
+
+.first-leeter {
+    font-family: 'Poppins-Bold';
+}
+
 .img1 {
     background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../../images/backgroundimage.png');
     background-size: cover;
@@ -77,38 +135,45 @@ header nav ul li a {
 
 .slider ul li {
     width: 100%;
-    height: 650px;
+    height: 654px;
 }
 
-.slider h2 {
+.slider h1 {
     margin-top: 180px;
     font-weight: bold;
 }
 
-h2 {
+h1 {
     font-weight: bold;
 }
 
 
 .slider-content {
-    margin-top: 12%;
+    margin-top: 20%;
 }
 
-@font-face {
-    font-family: 'MyriadPro-Regular';
-    src: url('../../Fonts/MyriadPro-Regular.otf') format('opentype');
-}
+
 
 .slider-font-family {
     font-family: 'MyriadPro-Regular';
+    font-size: 60px;
 }
 
 .font-weight {
-    font-weight: 900;
+}
+
+.light-font {
+    font-weight: 100;
 }
 
 .about {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans-Bold';
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.mobi-conn {
+    background-image: url('../../images/Arrows/arr.png');
 }
 
 .what {
@@ -119,21 +184,27 @@ h2 {
     border-radius: 21px;
     background-color: #3CB878;
     color: white;
-    width: 150px;
-    height: auto;
+    width: 200px;
+    text-align: center;
+    height: 20px;
     padding: 10px;
 }
 
 .ar-ow {
     color: #ffffff;
     z-index: 100;
-    margin-bottom: 7%;
     margin-left: 50%;
+    position: absolute;
+    margin-bottom: 5%;
 }
 
 .back-ground-text p {
     background-color: #F6F6F6;
-    padding: 3%;
+    padding: 8% 5% 5% 5%;
+}
+
+.mt-16 {
+    margin-top: 16%;
 }
 
 .live-conn h1 {
@@ -147,6 +218,18 @@ h2 {
     height: auto;
 }
 
+.service-font {
+    font-family: 'OpenSans-Semibold';
+}
+
+.icon-color {
+    color: #3CB878;
+}
+
+.c-mt {
+    margin-top: 2.3rem;
+}
+
 #best-skills {
     background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../../images/BestSkills/bestback.png');
     background-size: cover;
@@ -154,20 +237,44 @@ h2 {
     background-position: center;
 }
 
-.cog-text {
-    font-size: 18px;
-    font-weight: 700;
+.best-font {
+    font-family: 'Proxima Nova Semibold';
 }
+
+.port-font-amaze {
+    font-family: 'Proxima Nova Semibold';
+}
+
+.port-font-port {
+    font-family: 'ProximaNova-Regular';
+}
+
+.cog-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+my-active {
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link:active {
+    color: white !important;
+    background-color: #3cb878 !important;
+}
+
 
 .text-adj {
     margin-left: 7%;
+    font-size: 12px;
 }
 
 .port-folio {
-    font-family: ProximaNova SemiBold;
+    font-family: 'Proxima Nova Semibold';
     letter-spacing: 10px;
     font-weight: 500
 }
+
 
 .p-goal-btn {
     border: 1px solid #3cb878;
@@ -181,6 +288,15 @@ h2 {
 #clients {
     background-color: #F6F6F6;
     height: auto;
+}
+
+.padding-below {
+    padding: 5% 4% 8% 4%;
+}
+
+.client-font {
+    font-family: 'Proxima Nova Semibold';
+    font-weight: 200;
 }
 
 .web-color {
@@ -210,7 +326,7 @@ h2 {
 }
 
 .contact-font {
-    font-family: 'ProximaNovaA Bold';
+    font-family: 'Proxima Nova Semibold';
 }
 
 .chart {
