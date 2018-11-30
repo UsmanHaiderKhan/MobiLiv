@@ -2,26 +2,8 @@
 <html>
 <head>
     <title>ani</title>
+    <link href="Bootstrap4/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -104,9 +86,201 @@
             color: black;
             font-size: 16px;
         }
+        /*Nav bar CSS*/
+
+
+        .nav {
+            height: 50px;
+            width: 100%;
+            background-color: transparent;
+            position: relative;
+        }
+
+            .nav > .nav-header {
+                display: inline;
+            }
+
+                .nav > .nav-header > .nav-title {
+                    display: inline-block;
+                    font-size: 22px;
+                    color: black;
+                    padding: 10px 10px 10px 10px;
+                }
+
+            .nav > .nav-btn {
+                display: none;
+            }
+
+            .nav > .nav-links {
+                display: inline;
+                float: right;
+                font-size: 18px;
+                margin: 0 0 0 120px;
+            }
+
+                .nav > .nav-links > a {
+                    display: inline-block;
+                    padding: 13px 10px 13px 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                    .nav > .nav-links > a:hover {
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+
+            .nav > #nav-check {
+                display: none;
+            }
+
+        @media (max-width:600px) {
+            .nav > .nav-btn {
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+
+                .nav > .nav-btn > label {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                }
+
+                    .nav > .nav-btn > label:hover {
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+
+                    .nav > .nav-btn > label > span {
+                        display: block;
+                        width: 25px;
+                        height: 10px;
+                        border-top: 2px solid #eee;
+                    }
+
+            .nav > .nav-links {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 0px;
+                transition: all 0.3s ease-in;
+                overflow-y: hidden;
+                top: 50px;
+                left: 0px;
+                z-index: 1;
+            }
+
+                .nav > .nav-links > a {
+                    display: block;
+                    width: 100%;
+                }
+
+            .nav > #nav-check:not(:checked) + .nav-links {
+                height: 0px;
+            }
+
+            .nav > #nav-check:checked + .nav-links {
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+            }
+        }
+
+        .top-nav-collapse {
+            background-color: #24355c;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#"><span class="fa fa-video-camera fa-lg "></span>&nbsp;&nbsp;<strong class="pink-text">L' K</strong> STUDIO</a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#intro">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#best-feature">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#example">Example</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- Links -->
+                    <!-- Search form -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item animated shake">
+                            <a href="#" class="nav-link"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Collapsible content -->
+            </div>
+        </nav>
+        <div class="view hm-black-strong" id="intro">
+            <div class="container-fluid full-bg-img d-flex">
+                <div class="row d-flex justify-content-center mt-3">
+                    <div class="col-md-10 text-center">
+                        <h2 class="display-3 font-bold font-weight-normal text-center mb-2 animated fadeInDown" style="color: aqua; margin-top: 20%">PhotoGraphy At L'K STUDIO</h2>
+                        <hr class="hr-light" />
+                        <h4 class="text-white my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi, cupiditate aut deleniti dolorem dolorum beatae, assumenda pariatur tenetur totam ullam quia vitae sit voluptates illo quam ea. Consequuntur, accusantium.</h4>
+                        <button type="button" class="btn btn-outline-white ml-5 mt-5">Read More <i class="fa fa-book ml-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                JoGeek
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+            <a href="#" target="_blank">Github</a>
+            <a href="#" target="_blank">Stackoverflow</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Codepen</a>
+            <a href="#" target="_blank">JsFiddle</a>
+        </div>
+    </div>
     <div id="imagesMain">
         <div class="imagebox">
             <img src="http://lorempixel.com/output/nature-q-c-300-300-4.jpg">
@@ -124,7 +298,6 @@
             <img src="http://lorempixel.com/output/nature-q-c-300-300-4.jpg">
             <div class="caption">Questa e' una prova</div>
         </div>
-
     </div>
     <div class="container">
         <div class="box">
@@ -140,6 +313,8 @@
             <div class="chart" data-percent="70">70%</div>
         </div>
     </div>
+    <script src="Bootstrap4/js/jquery-3.3.1.min.js"></script>
+    <script src="Bootstrap4/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="Bootstrap4/js/jquery.easypiechart.js"></script>
     <script>
@@ -156,17 +331,17 @@
     </div>
     <script type="text/javascript">
 
-                $(document).ready(function () {
-                    var progress_circle = $(".my-progress-bar").gmpc({
-                        line_width: 12,
-                        color: "#ff0",
-                        starting_position: 50,
-                        percent: 0,
-                        percentage: true
+                        $(document).ready(function () {
+                            var progress_circle = $(".my-progress-bar").gmpc({
+                                line_width: 12,
+                                color: "#ff0",
+                                starting_position: 50,
+                                percent: 0,
+                                percentage: true
 
-                    }).gmpc('animate', 80, 3000);
+                            }).gmpc('animate', 80, 3000);
 
-                });
-            </script>-->
+                        });
+                    </script>-->
 </body>
 </html>
