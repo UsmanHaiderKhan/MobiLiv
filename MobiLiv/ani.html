@@ -8,6 +8,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
         body {
             margin: 0px;
             padding: 0px;
@@ -189,117 +201,19 @@
         .top-nav-collapse {
             background-color: #24355c;
         }
+
+        body {
+            margin: 2em;
+        }
+
+        .flex-v-center {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
-            <div class="container">
-                <!-- Navbar brand -->
-                <a class="navbar-brand" href="#"><span class="fa fa-video-camera fa-lg "></span>&nbsp;&nbsp;<strong class="pink-text">L' K</strong> STUDIO</a>
-                <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Collapsible content -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Links -->
-                    <ul class="navbar-nav mr-auto smooth-scroll">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#intro">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#best-feature">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#example">Example</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallery">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                    <!-- Links -->
-                    <!-- Search form -->
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li class="nav-item animated shake">
-                            <a href="#" class="nav-link"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Collapsible content -->
-            </div>
-        </nav>
-        <div class="view hm-black-strong" id="intro">
-            <div class="container-fluid full-bg-img d-flex">
-                <div class="row d-flex justify-content-center mt-3">
-                    <div class="col-md-10 text-center">
-                        <h2 class="display-3 font-bold font-weight-normal text-center mb-2 animated fadeInDown" style="color: aqua; margin-top: 20%">PhotoGraphy At L'K STUDIO</h2>
-                        <hr class="hr-light" />
-                        <h4 class="text-white my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi, cupiditate aut deleniti dolorem dolorum beatae, assumenda pariatur tenetur totam ullam quia vitae sit voluptates illo quam ea. Consequuntur, accusantium.</h4>
-                        <button type="button" class="btn btn-outline-white ml-5 mt-5">Read More <i class="fa fa-book ml-2"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="nav">
-        <div class="nav-header">
-            <div class="nav-title">
-                JoGeek
-            </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-        <input type="checkbox" id="nav-check">
-        <div class="nav-links">
-            <a href="#" target="_blank">Github</a>
-            <a href="#" target="_blank">Stackoverflow</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Codepen</a>
-            <a href="#" target="_blank">JsFiddle</a>
-        </div>
-    </div>
-    <div id="imagesMain">
-        <div class="imagebox">
-            <img src="http://lorempixel.com/output/nature-q-c-300-300-4.jpg">
-            <div class="caption">
-                <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
-                <hr class="mr-auto ml-auto" style="border: 1px solid #ffffff; width: 50px" />
-                <a href="#" class="fa fa-eye fa-lg bg-white p-2 r-goal"></a>
-            </div>
-        </div>
-        <div class="imagebox">
-            <img src="http://lorempixel.com/output/nature-q-c-300-300-4.jpg">
-            <div class="caption">Questa e' una prova</div>
-        </div>
-        <div class="imagebox">
-            <img src="http://lorempixel.com/output/nature-q-c-300-300-4.jpg">
-            <div class="caption">Questa e' una prova</div>
-        </div>
-    </div>
-    <div class="container">
+    <!--<div class="container">
         <div class="box">
             <div class="chart" data-percent="73" data-scale-color="#3cb878" data-bar-Color="#3cb878">73%</div>
         </div>
@@ -311,6 +225,27 @@
         </div>
         <div class="box">
             <div class="chart" data-percent="70">70%</div>
+        </div>
+    </div>-->
+    <div class="form-group row flex-v-center">
+
+        <div class="col-xs-3">
+            <p class="input-group">
+                <input type="text" id="to" class="form-control" />
+            </p>
+        </div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <div class="col-xs-3 ">
+            <p class="input-group">
+                <textarea type="text" id="from" class="form-control"></textarea>
+            </p>
+        </div>
+    </div>
+    <div class="form-group row flex-v-center">
+        <div class="col-xs-3">
+            <input type="text" id="another-input" class="form-control" />
         </div>
     </div>
     <script src="Bootstrap4/js/jquery-3.3.1.min.js"></script>
