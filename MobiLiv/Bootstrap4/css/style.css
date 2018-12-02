@@ -18,6 +18,11 @@
 }
 
 @font-face {
+    font-family: 'Tahoma Regular font';
+    src: url('../../Fonts/Tahoma Regular font.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'OpenSans-Semibold';
     src: url('../../Fonts/OpenSans-Semibold.ttf') format('truetype');
 }
@@ -133,6 +138,36 @@ header nav ul li a {
     background-position: center;
 }
 
+/*.over-effect {
+    opacity: 1;
+    height: 654px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}*/
+.over-effect {
+    background: rgba(0,0,0,1);
+    opacity: .4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.position {
+    position: relative;
+}
+
+#dots {
+    margin-bottom: 15%;
+    position: relative;
+    height: 8px;
+    width: 8px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
 .slider ul li {
     width: 100%;
     height: 654px;
@@ -147,11 +182,24 @@ h1 {
     font-weight: bold;
 }
 
+.slider-images {
+    height: 654px;
+    width: 100%
+}
 
 .slider-content {
     margin-top: 20%;
 }
 
+.goal-button {
+    border-radius: 21px;
+    background-color: #3CB878;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    text-decoration: none;
+}
 
 
 .slider-font-family {
@@ -180,20 +228,12 @@ h1 {
     margin-left: 4rem !important;
 }
 
-.goal-button {
-    border-radius: 21px;
-    background-color: #3CB878;
-    color: white;
-    width: 200px;
-    text-align: center;
-    height: 20px;
-    padding: 10px;
-}
+
 
 .ar-ow {
     color: #ffffff;
     z-index: 100;
-    margin-left: 50%;
+    margin-left: 49%;
     position: absolute;
     margin-bottom: 5%;
 }
@@ -212,7 +252,7 @@ h1 {
 }
 
 .live-conn h1 {
-    letter-spacing: 20px;
+    letter-spacing: 15px;
     font-size: 4rem;
     font-weight: 500
 }
@@ -224,6 +264,15 @@ h1 {
 
 .service-font {
     font-family: 'OpenSans-Semibold';
+}
+
+.text-light-color {
+    color: #696969;
+}
+
+.back-image {
+    background-image: url('../../images/Portfolio/port-back.png');
+    background-size: cover;
 }
 
 .padding-service {
@@ -272,9 +321,9 @@ my-active {
 }
 
 .my-pill {
-    background-color: #bac6d5;
+    background-color: #EBEBEB;
     width: 100px;
-    height: 45px;
+    height: 40px;
     border-radius: 3px;
 }
 
@@ -290,6 +339,9 @@ my-active {
     font-weight: 500
 }
 
+.mr-8 {
+    margin-top: 6rem;
+}
 
 .p-goal-btn {
     border: 1px solid #3cb878;
@@ -298,6 +350,19 @@ my-active {
     width: 150px;
     background: transparent;
     color: #3cb878;
+}
+
+.mb-100 {
+    margin-bottom: 106px;
+}
+
+.mt-70 {
+    margin-top: 170px;
+}
+
+.p-goal-btn:hover {
+    background: #3cb878;
+    color: white;
 }
 
 .ml-45 {
@@ -336,11 +401,17 @@ my-active {
     font-size: 25px !important
 }
 
-.flex-client {
+.flex-client2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 220px;
+}
+
+.flex-client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px 200px;
 }
 
 @media(max-width:992px ) {
@@ -352,6 +423,10 @@ my-active {
         margin-top: 9%;
         margin-left: 13%;
     }
+}
+
+.small-text {
+    color: #e6e8ea;
 }
 
 #contact-me {
@@ -394,12 +469,12 @@ my-active {
 
 .chart {
     position: relative;
-    width: 110px;
-    height: 110px;
+    width: 170px;
+    height: 170px;
     margin: 0 auto;
     text-align: center;
-    font-size: 30px;
-    line-height: 110px;
+    font-size: 20px;
+    line-height: 156px;
 }
 
 
@@ -430,10 +505,11 @@ canvas {
     transition: .5s ease;
     opacity: 0.5;
     position: absolute;
-    width: 125%;
-    height: 99%;
-    left: 63%;
-    top: 50%;
+    margin-top: 3%;
+    width: 153%;
+    height: 132%;
+    left: 77%;
+    top: 63%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -577,7 +653,11 @@ input[type=email] {
     }
 
 .foot {
-    border: 1px solid #fff;
+    border: 1px solid #c0c0c1;
     width: 100%;
     margin-bottom: 15px;
+}
+
+.google-font {
+    font-family: 'Tahoma Regular font';
 }

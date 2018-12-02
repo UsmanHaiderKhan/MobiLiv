@@ -6202,8 +6202,8 @@ button.close {
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 48%;
+    bottom: 52%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -6236,8 +6236,8 @@ button.close {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 50px;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
 }
@@ -6306,7 +6306,7 @@ button.close {
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 20px;
+    bottom: 194px;
     left: 15%;
     z-index: 10;
     padding-top: 20px;

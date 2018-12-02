@@ -9576,8 +9576,8 @@ body.scrollable {
 
 .carousel .carousel-control-prev-icon,
 .carousel .carousel-control-next-icon {
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 50px;
 }
 
 .carousel .carousel-control-prev-icon {
@@ -9585,12 +9585,12 @@ body.scrollable {
 }
 
 .carousel .carousel-control-next-icon {
-    background-image: url('../../images/Arrows/arrow-right1.png');
+    background-image: url('../../images/Arrows/right-arrow.png');
 }
 
 .carousel .carousel-indicators li {
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 1px;
+    height: 1px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     cursor: pointer;
