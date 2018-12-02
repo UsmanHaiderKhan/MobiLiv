@@ -3,9 +3,10 @@
 <head>
     <title>ani</title>
     <link href="Bootstrap4/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Marquee-Scroller-groupLoop/examples/css/examples.css" rel="stylesheet" />
+    <link href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet" />
     <style>
-
-
 
 
 
@@ -210,9 +211,43 @@
             display: flex;
             align-items: center;
         }
+
+        .slider-content {
+            position: relative;
+            margin-bottom: 30%;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <div class="owl-carousel owl-theme">
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+    </div>
+    <div class="example-carousel" id="grouploop-example">
+        <div class="item-wrap">
+            <div class="item active">
+                Item 1
+            </div>
+            <div class="item">
+                Item 2
+            </div>
+            <div class="item">
+                Item 3
+            </div>
+            <div class="item">
+                Item 4
+            </div>
+            <div class="item">
+                Item 5
+            </div>
+        </div>
+    </div>
     <!--<div class="container">
         <div class="box">
             <div class="chart" data-percent="73" data-scale-color="#3cb878" data-bar-Color="#3cb878">73%</div>
@@ -228,7 +263,6 @@
         </div>
     </div>-->
     <div class="form-group row flex-v-center">
-
         <div class="col-xs-3">
             <p class="input-group">
                 <input type="text" id="to" class="form-control" />
@@ -251,8 +285,54 @@
     <script src="Bootstrap4/js/jquery-3.3.1.min.js"></script>
     <script src="Bootstrap4/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="Marquee-Scroller-groupLoop/dist/grouploop-1.0.3.min.js"></script>
     <script src="Bootstrap4/js/jquery.easypiechart.js"></script>
     <script>
+
+
+        $(function () {
+
+
+
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true
+            });
+        });
+
+
+        $(function () {
+            $('#grouploop-example').grouploop({
+
+                // animation speed
+                velocity: 2,
+
+                // false = from left to right
+                forward: true,
+
+                // default selectors
+                childNode: ".item",
+                childWrapper: ".item-wrap",
+
+                // enable pause on hover
+                pauseOnHover: true,
+
+                // stick the first item
+                stickFirstItem: false,
+
+                // callback
+                complete: null
+
+            });
+        });
+
+
         $(function () {
             $('.chart').easyPieChart({
                 //your options goes here
@@ -266,17 +346,17 @@
     </div>
     <script type="text/javascript">
 
-                        $(document).ready(function () {
-                            var progress_circle = $(".my-progress-bar").gmpc({
-                                line_width: 12,
-                                color: "#ff0",
-                                starting_position: 50,
-                                percent: 0,
-                                percentage: true
+                                    $(document).ready(function () {
+                                        var progress_circle = $(".my-progress-bar").gmpc({
+                                            line_width: 12,
+                                            color: "#ff0",
+                                            starting_position: 50,
+                                            percent: 0,
+                                            percentage: true
 
-                            }).gmpc('animate', 80, 3000);
+                                        }).gmpc('animate', 80, 3000);
 
-                        });
-                    </script>-->
+                                    });
+                                </script>-->
 </body>
 </html>
