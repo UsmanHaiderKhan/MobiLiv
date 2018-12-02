@@ -183,7 +183,7 @@ h1 {
 }
 
 .slider-images {
-    height: 654px;
+    height: 603px;
     width: 100%
 }
 
@@ -212,6 +212,10 @@ h1 {
 
 .light-font {
     font-weight: 100;
+}
+
+.weight-900 {
+    font-weight: 900;
 }
 
 .about {
