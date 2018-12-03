@@ -1,5 +1,6 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,800);
 @import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /*================================= Font Faces Start ================================*/
 @font-face {
@@ -208,10 +209,12 @@ h1 {
 }
 
 .font-weight {
+    font-weight: 900;
 }
 
 .light-font {
     font-weight: 100;
+    color: #e8e8e8;
 }
 
 .weight-900 {
@@ -324,6 +327,11 @@ my-active {
     background-color: #3cb878 !important;
 }
 
+.list-inline .btn.active, .btn:active {
+    background-color: #3cb878 !important;
+    color: white !important;
+}
+
 .my-pill {
     background-color: #EBEBEB;
     width: 100px;
@@ -362,6 +370,10 @@ my-active {
 
 .mt-70 {
     margin-top: 170px;
+}
+
+.mt-70e {
+    margin-top: 70px;
 }
 
 .p-goal-btn:hover {
@@ -490,7 +502,13 @@ canvas {
 }
 
 
-/****************************/
+/************* Portfolio Gallery ***************/
+@media(max-width: 766px) {
+    .media-justify {
+        justify-content: center !important;
+    }
+}
+
 #imagesMain {
     padding: 0;
     margin-left: auto;
@@ -505,17 +523,56 @@ canvas {
     width: 300px;
 }
 
+@media(max-width: 766px) {
+    .imagebox {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        padding: 0% auto 0% auto;
+    }
+}
+
 .caption {
     transition: .5s ease;
     opacity: 0.5;
     position: absolute;
-    margin-top: 3%;
-    width: 153%;
-    height: 132%;
-    left: 77%;
+    margin-top: -13%;
+    width: 141%;
+    height: 100%;
+    left: 70%;
     top: 63%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+@media(max-width: 766px) {
+    .caption {
+        transition: .5s ease;
+        opacity: 0.5;
+        position: absolute;
+        margin-top: -13%;
+        width: 140%;
+        height: 100%;
+        left: 78%;
+        top: 63%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+}
+
+@media(max-width: 370px) {
+    .caption {
+        transition: .5s ease;
+        opacity: 0.5;
+        position: absolute;
+        margin-top: -13%;
+        width: 140%;
+        height: 100%;
+        left: 70%;
+        top: 63%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
 }
 
 @media(max-width: 766px) {
@@ -568,8 +625,21 @@ canvas {
     opacity: 0;
 }
 
+.view-goal {
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #3cb878;
+    border-radius: 25px;
+    color: #3cb878;
+}
+
+    .view-goal:hover {
+        background: #3cb878;
+        color: white;
+    }
 /*  *************** Contact Form *******************/
-input[type=text] {
+input [type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -577,7 +647,8 @@ input[type=text] {
     background: transparent;
     border: 2px solid #fff;
     border-radius: 4px;
-    color: white;
+    color: #a2a1a1;
+    font-family: 'Raleway', sans-serif;
 }
 
     input[type=text]:focus {
@@ -592,7 +663,8 @@ input[type=email] {
     background: transparent;
     border: 2px solid #fff;
     border-radius: 4px;
-    color: white;
+    color: #a2a1a1;
+    font-family: 'Raleway', sans-serif;
 }
 
     input[type=email]:focus {
@@ -608,7 +680,8 @@ input[type=email] {
     border: 2px solid #fff;
     border-radius: 4px;
     margin-top: -60px;
-    color: white;
+    color: #a2a1a1;
+    font-family: 'Raleway', sans-serif;
 }
 
     .textaera:focus {
@@ -630,6 +703,10 @@ input[type=email] {
 
 .padding-5 {
     padding: 5% 5% 5px 5%;
+}
+
+.text-color {
+    color: #c4c5c4;
 }
 
 .social-icon {
@@ -665,3 +742,13 @@ input[type=email] {
 .google-font {
     font-family: 'Tahoma Regular font';
 }
+
+.smooth {
+    text-decoration: none;
+    color: #e6e8ea;
+}
+
+    .smooth:hover {
+        text-decoration: none;
+        color: #e6e8ea;
+    }

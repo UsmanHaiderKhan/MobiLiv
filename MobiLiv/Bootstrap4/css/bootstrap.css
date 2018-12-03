@@ -7842,6 +7842,10 @@ button.bg-dark:focus {
     width: 75% !important;
 }
 
+.client-text {
+    color: #393939;
+}
+
 .w-100 {
     width: 100% !important;
 }
