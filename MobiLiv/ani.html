@@ -21,6 +21,49 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         body {
             margin: 0px;
             padding: 0px;
@@ -218,8 +261,107 @@
             color: white;
         }
     </style>
+    <!--<style>
+
+
+
+        .galleryFilters {
+            margin: 20px auto;
+            align-content: center;
+            .filterList
+
+        {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            .filterlistItem
+
+        {
+        }
+
+        }
+        }
+    </style>-->
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
+                <ul class="list-inline filterList">
+                    <li class="filterListItem btn violetBtn" data-filter="all">ALL</li>
+                    <li class="filterListItem btn violetBtn" data-filter="web">WEB</li>
+                    <li class="filterListItem btn violetBtn" data-filter="apps">APPS</li>
+                    <li class="filterListItem btn violetBtn" data-filter="icons">ICONS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row filtr-container ">
+            <!-- item -->
+            <div class="col-md-4 filtr-item thumbnail" data-category="all,web" data-sort="web">
+                <div class="imagebox">
+                    <img src="images/Portfolio/port41.png" alt="browse image" width="460" height="400" />
+                    <div class="caption">
+                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                        <hr class="mr-auto ml-auto hover-hr" />
+                        <a href="images/Portfolio/port42.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- item -->
+            <div class="col-md-4 filtr-item thumbnail" data-category="all,web" data-sort="web">
+                <div class="imagebox">
+                    <img src="images/Portfolio/port45.png" alt="browse image" width="460" height="400" />
+                    <div class="caption">
+                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                        <hr class="mr-auto ml-auto hover-hr" />
+                        <a href="images/Portfolio/port42.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 filtr-item thumbnail" data-category="all,apps" data-sort="apps">
+                <div class="imagebox">
+                    <img src="images/Portfolio/port42.png" alt="browse image" width="460" height="400" />
+                    <div class="caption">
+                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                        <hr class="mr-auto ml-auto hover-hr" />
+                        <a href="images/Portfolio/port42.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 filtr-item thumbnail" data-category="all,apps" data-sort="apps">
+                <div class="imagebox">
+                    <img src="images/Portfolio/port46.png" alt="browse image" width="460" height="400" />
+                    <div class="caption">
+                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                        <hr class="mr-auto ml-auto hover-hr" />
+                        <a href="images/Portfolio/port42.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 filtr-item thumbnail" data-category="all,icons" data-sort="icons">
+                <div class="imagebox">
+                    <img src="images/Portfolio/port43.png" alt="browse image" width="460" height="400" />
+                    <div class="caption">
+                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                        <hr class="mr-auto ml-auto hover-hr" />
+                        <a href="images/Portfolio/port42.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- item -->
+            <div class="col-md-4 filtr-item thumbnail" data-category="all,nature" data-sort="stones">
+                <div class="imagebox">
+                    <img src="images/Portfolio/port44.png" alt="browse image" width="460" height="400" />
+                    <div class="caption">
+                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                        <hr class="mr-auto ml-auto hover-hr" />
+                        <a href="images/Portfolio/port42.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- item -->
+        </div>
+    </div>
     <div class="owl-carousel owl-theme">
         <div> Your Content </div>
         <div> Your Content </div>
@@ -284,15 +426,24 @@
     </div>
     <script src="Bootstrap4/js/jquery-3.3.1.min.js"></script>
     <script src="Bootstrap4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.3.4/jquery.filterizr.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="Marquee-Scroller-groupLoop/dist/grouploop-1.0.3.min.js"></script>
     <script src="Bootstrap4/js/jquery.easypiechart.js"></script>
+    <script src="Bootstrap4/js/jquery.filterizr.min.js"></script>
+    <script src="Bootstrap4/js/script.js"></script>
     <script>
 
 
-        $(function () {
 
+
+
+
+
+
+        $(function () {
 
 
             var owl = $('.owl-carousel');
@@ -346,17 +497,196 @@
     </div>
     <script type="text/javascript">
 
-                                    $(document).ready(function () {
-                                        var progress_circle = $(".my-progress-bar").gmpc({
-                                            line_width: 12,
-                                            color: "#ff0",
-                                            starting_position: 50,
-                                            percent: 0,
-                                            percentage: true
+                                        $(document).ready(function () {
+                                            var progress_circle = $(".my-progress-bar").gmpc({
+                                                line_width: 12,
+                                                color: "#ff0",
+                                                starting_position: 50,
+                                                percent: 0,
+                                                percentage: true
 
-                                        }).gmpc('animate', 80, 3000);
+                                            }).gmpc('animate', 80, 3000);
 
-                                    });
-                                </script>-->
+                                        });
+                                    </script>-->
 </body>
 </html>
+<div>
+    <div class="text-center mt-4">
+        <h1 class="port-folio"> OUR PORTFOLIO</h1>
+        <p class="text-center">
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit,<br /> vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+        <br /><br />
+        <!-- Start From Here -->
+        <div class="media-gallery">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="display: flex;justify-content: center">
+                <li class="nav-item my-pill ">
+                    <a class="nav-link text-black-50 active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-expanded="true">ALL</a>
+                </li>
+                <li class="nav-item my-pill ml-2">
+                    <a class="nav-link text-black-50" id="pills-web-tab" data-toggle="pill" href="#pills-web" role="tab" aria-controls="pills-web" aria-expanded="true">WEB</a>
+                </li>
+                <li class="nav-item my-pill ml-2">
+                    <a class="nav-link text-black-50" id="pills-app-tab" data-toggle="pill" href="#pills-app" role="tab" aria-controls="pills-app" aria-expanded="true">APPS</a>
+                </li>
+                <li class="nav-item my-pill ml-2">
+                    <a class="nav-link text-black-50" id="pills-icons-tab" data-toggle="pill" href="#pills-icon" role="tab" aria-controls="pills-icon" aria-expanded="true">ICONS</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div id="imagesMain" class="mt-2">
+                        <div class="row mt-2 media-gallery">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port41.png" alt="browse image" width="460" height="400" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port41.png" data-lightbox="image-1" class="fa fa-eye fa-lg bg-white p-2 r-goal"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port42.png" alt="browse image" width="460" height="400" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port42.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port43.png" alt="browse image" width="460" height="400" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr">
+                                        <a href="images/Portfolio/port43.png" data-lightbox="image-1" class="fa fa-eye fa-lg bg-white p-2 r-goal"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 mr-8">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port44.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port44.png" data-lightbox="image-1" class="fa fa-eye fa-lg bg-white p-2 r-goal"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 mr-8">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port45.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port45.png" data-lightbox="image-1" class="fa fa-eye fa-lg bg-white p-2 r-goal"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 mr-8">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port46.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">
+                                            DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small>
+                                            <hr class="mr-auto ml-auto hover-hr" />
+                                            <a href="images/Portfolio/port46.png" data-lightbox="image-1" class="fa fa-eye fa-lg bg-white p-2 r-goal"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
+                    <div id="imagesMain">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port41.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port41.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port45.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port45.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
+                    <div id="imagesMain">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port42.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port42.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port46.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port46.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-icon" role="tabpanel" aria-labelledby="pills-icons-tab">
+                    <div id="imagesMain">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port43.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port43.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                                <div class="imagebox">
+                                    <img src="images/Portfolio/port44.png" alt="browse image" width="460" height="396" />
+                                    <div class="caption">
+                                        <div class="text">DESGIN STUDIO INC<br /> <small>Brand Identity & Experience</small></div>
+                                        <hr class="mr-auto ml-auto hover-hr" />
+                                        <a href="images/Portfolio/port44.png" class="fa fa-eye fa-lg bg-white p-2 r-goal" data-lightbox="image-1"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Finish Here  -->
+        </div>
+    </div>
+    <br />
+    <div class="row justify-content-center mt-70">
+        <button class="p-goal-btn mb-100"> VIEW MORE </button>
+    </div>
+</div>
