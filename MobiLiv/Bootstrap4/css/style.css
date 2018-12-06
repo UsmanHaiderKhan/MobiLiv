@@ -265,6 +265,7 @@ h1 {
     font-weight: 500
 }
 
+
 #services {
     background-color: #F6F6F6;
     height: auto;
@@ -865,4 +866,21 @@ input[type=email] {
 
 .remaining-content span {
     display: none;
+}
+/*===================== Media Queries ========================*/
+@media screen and (max-width: 360px) {
+
+    .mt-8 {
+        margin-top: 4rem;
+    }
+
+    .live-conn h1 {
+        letter-spacing: 8px;
+        font-size: 4rem;
+        font-weight: 500
+    }
+
+    .md-mt-5 {
+        margin-top:
+    }
 }
