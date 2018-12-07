@@ -6315,6 +6315,80 @@ button.close {
     text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 120px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 120px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 108px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 74px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 74px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+
+
+
+
 .align-baseline {
     vertical-align: baseline !important;
 }
