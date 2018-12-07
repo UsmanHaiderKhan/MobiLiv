@@ -35,41 +35,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         body {
             margin: 0px;
             padding: 0px;
@@ -304,6 +269,52 @@
     </style>-->
 </head>
 <body>
+    <style>
+
+
+
+
+
+
+
+        .inputfile {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+            .inputfile + label {
+                font-size: 1.25em;
+                font-weight: 700;
+                color: white;
+                background-color: red;
+                padding: 2%;
+                border: 2px solid black;
+                display: inline-block;
+            }
+
+                .inputfile:focus + label,
+                .inputfile + label:hover {
+                    background-color: red;
+                }
+
+            .inputfile + label {
+                cursor: pointer; /* "hand" cursor */
+            }
+
+            .inputfile:focus + label {
+                outline: 1px dotted #000;
+                outline: -webkit-focus-ring-color auto 5px;
+            }
+    </style>
+    <div class="container">
+        <input type="file" name="file-3" id="file-3" class="inputfile" />
+        <label for="file-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z" /></svg> <span>Choose a file&hellip;</span></label>
+    </div>
+    <script src="CustomFileInputs/js/custom-file-input.js"></script>
     <div class="container">
         <div class="row">
             <div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
@@ -511,18 +522,18 @@
     </div>
     <script type="text/javascript">
 
-                                            $(document).ready(function () {
-                                                var progress_circle = $(".my-progress-bar").gmpc({
-                                                    line_width: 12,
-                                                    color: "#ff0",
-                                                    starting_position: 50,
-                                                    percent: 0,
-                                                    percentage: true
+                                                    $(document).ready(function () {
+                                                        var progress_circle = $(".my-progress-bar").gmpc({
+                                                            line_width: 12,
+                                                            color: "#ff0",
+                                                            starting_position: 50,
+                                                            percent: 0,
+                                                            percentage: true
 
-                                                }).gmpc('animate', 80, 3000);
+                                                        }).gmpc('animate', 80, 3000);
 
-                                            });
-                                        </script>-->
+                                                    });
+                                                </script>-->
 </body>
 </html>
 <div>
