@@ -436,42 +436,6 @@ my-active {
     padding: 0px 200px;
 }
 
-@media(max-width:992px ) {
-    .flex-client {
-        padding: 0px 120px;
-    }
-
-    .mt-media {
-        margin-top: 9%;
-        margin-left: 13%;
-    }
-}
-
-@media(max-width: 768px) {
-    .flex-client {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 0 100px;
-    }
-
-    .tt-ff {
-        margin-top: 0%;
-    }
-
-    .phone {
-        margin-right: 8%;
-    }
-
-    .email {
-        margin-left: 8px;
-    }
-
-    .face {
-        margin-top: 1rem;
-        margin-left: 2rem;
-    }
-}
 
 
 .small-text {
@@ -886,6 +850,75 @@ input[type=email] {
         position: absolute;
         margin-bottom: 5%;
     }
+    /*========= About Section  ============*/
+    .media-text-center {
+        text-align: center;
+    }
+
+    .media-pera-width {
+        width: 43rem;
+    }
+
+    .media-pad-right {
+        padding: 0 4% 0 4%;
+    }
+
+    .media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }
+
+    .media-pera2-width {
+        width: 35rem;
+    }
+
+    .back-ground-text {
+        background-color: #F6F6F6;
+        padding: 12% 8% 5% 8% !important;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        width: 661px;
+    }
+
+    .mt-8 {
+        margin-top: 2rem;
+    }
+
+    .media-block {
+        display: block;
+    }
+
+    .live-conn h1 {
+        letter-spacing: 15px;
+        font-size: 4rem;
+        font-weight: 500
+    }
+
+    .media-mt {
+        margin-top: 0;
+    }
+    /*================== Services Section ==================*/
+    .media-justify-center {
+        justify-content: center;
+    }
+    /*============= Gallery Section ===============*/
+    .imagebox {
+        position: relative;
+        height: 352px;
+        width: 400px;
+    }
+
+    .caption {
+        transition: .5s ease;
+        opacity: 0.5;
+        position: absolute;
+        margin-top: -11%;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 63%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -964,8 +997,71 @@ input[type=email] {
         -ms-transform: translate(-50%, -50%);
     }
 }
-/*===================================*/
-@media screen and (max-width: 360px) {
+/*=============== Media Query for the 411px ===============*/
+@media screen and (max-width: 411px) {
+    .media-mt {
+        margin-top: 10px;
+    }
+
+    .flex-client {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*=============== Media Query for the 375px ================*/
+@media screen and (max-width:375px ) {
+    .media-text-center {
+        text-align: center;
+    }
+
+    .media-pera-width {
+        width: 20rem;
+    }
+
+    .media-pad-right {
+        padding: 0 4% 0 4%;
+    }
+
+    .media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }
+
+    .media-pera2-width {
+        width: 18rem;
+    }
+
+    .back-ground-text {
+        background-color: #F6F6F6;
+        padding: 12% 8% 5% 8% !important;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        width: 334px;
+    }
+
+
+    .mt-8 {
+        margin-top: 2rem;
+    }
+
+    .live-conn h1 {
+        letter-spacing: 5px;
+        font-size: 3rem;
+        font-weight: 500
+    }
+
+    .media-mt {
+        margin-top: 5px;
+    }
+
+    /*.media-email {
+        margin-left: -21px;
+        margin-top: 5px;
+    }*/
+}
+
+/*================= Media Query for s-5 360px ==================*/
+@media screen and (max-width:360px) {
     /*=========== Slider Section ===============*/
     .nav-right {
         margin-right: auto;
@@ -984,16 +1080,98 @@ input[type=email] {
         text-align: center;
     }
 
+    .media-pera-width {
+        width: 20rem;
+    }
 
+    .media-pad-right {
+        padding: 0 4% 0 4%;
+    }
+
+    .media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }
+
+    .media-pera2-width {
+        width: 18rem;
+    }
+
+    .back-ground-text {
+        background-color: #F6F6F6;
+        padding: 12% 8% 5% 8% !important;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        width: 334px;
+    }
 
 
     .mt-8 {
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .live-conn h1 {
-        letter-spacing: 8px;
-        font-size: 4rem;
+        letter-spacing: 5px;
+        font-size: 3rem;
         font-weight: 500
+    }
+
+    .media-mt {
+        margin-top: 5px;
+    }
+    /*================== Services Section ==================*/
+    .media-justify-center {
+        justify-content: center;
+    }
+    /*============= Gallery Section ===============*/
+    .imagebox {
+        position: relative;
+        height: 352px;
+        width: 360px;
+    }
+
+    .caption {
+        transition: .5s ease;
+        opacity: 0.5;
+        position: absolute;
+        margin-top: -13%;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 63%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+}
+
+
+
+/*============== Land scape Media Queries ==============*/
+@media screen and (max-width: 731px) {
+    .media-text-center {
+        text-align: center;
+    }
+
+    .media-pera-width {
+        width: 32rem;
+    }
+
+    .media-pad-right {
+        padding: 0 4% 0 4%;
+    }
+
+    .media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }
+
+    .media-pera2-width {
+        width: 26rem;
+    }
+
+    .back-ground-text {
+        background-color: #F6F6F6;
+        padding: 12% 8% 5% 8% !important;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        width: 480px;
     }
 }
