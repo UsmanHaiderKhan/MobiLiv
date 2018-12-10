@@ -46,22 +46,6 @@
 }
 
 
-/*=============== Transition on Scrolling ===================*/
-
-.sticky-top {
-    transition: all 0.25s ease-in;
-}
-
-/* style for when sitcky is applied */
-.stuck .sticky-top {
-    background-color: #222 !important;
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
-}
-
-/*=======================================================*/
-
-
 .nav-color {
     background-color: #0A0E18;
 }
@@ -180,7 +164,7 @@ header nav ul li a {
 
 .slider ul li {
     width: 100%;
-    height: 654px;
+    height: 100vh;
 }
 
 .slider h1 {
@@ -193,7 +177,7 @@ h1 {
 }
 
 .slider-images {
-    height: 653px;
+    height: 100vh;
     width: 100%
 }
 
@@ -245,7 +229,7 @@ h1 {
 }
 
 .mt-28 {
-    margin-top: -28%;
+    margin-top: -30%;
 }
 
 .what {
@@ -265,7 +249,7 @@ h1 {
 
 
 .mt-16 {
-    margin-top: 23%;
+    margin-top: 12%;
 }
 
 .mt-8 {
@@ -333,8 +317,8 @@ h1 {
     font-weight: 600;
 }
 
-
-my-active {
+.pb-6 {
+    padding-bottom: 6rem;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link:active {
@@ -474,7 +458,7 @@ my-active {
 }
 
 .custome-button {
-    width: 49%;
+    width: 100%;
     height: 42px;
     background-color: #3CB878;
     color: white;
@@ -509,11 +493,6 @@ canvas {
 
 
 /************* Portfolio Gallery ***************/
-@media(max-width: 766px) {
-    .media-justify {
-        justify-content: center !important;
-    }
-}
 
 #imagesMain {
     padding: 0;
@@ -525,100 +504,24 @@ canvas {
 
 .imagebox {
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: auto;
+    width: 100%;
 }
 
-@media(max-width: 766px) {
-    .imagebox {
-        position: relative;
-        height: 300px;
-        width: 300px;
-        padding: 0% auto 0% auto;
-    }
-}
 
-@media(max-width: 360px) {
-
-    .media-mt {
-        margin-top: .56rem;
-    }
-}
 
 
 .caption {
     transition: .5s ease;
     opacity: 0.5;
     position: absolute;
-    margin-top: -13%;
-    width: 155%;
+    margin-top: -10%;
+    width: 100%;
     height: 100%;
-    left: 77%;
+    left: 50%;
     top: 63%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-@media(max-width: 768px) {
-    .imagebox {
-        position: relative;
-        height: 350px;
-        width: 350px;
-    }
-
-    .respo-style {
-        width: 398px;
-        height: 350px;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .caption {
-        transition: .5s ease;
-        opacity: 0.5;
-        position: absolute;
-        margin-top: -13%;
-        width: 115%;
-        height: 100%;
-        left: 56%;
-        top: 63%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
-
-    .mt-70e {
-        margin-top: 140px;
-    }
-}
-
-@media(max-width: 766px) {
-    .caption {
-        transition: .5s ease;
-        opacity: 0.5;
-        position: absolute;
-        margin-top: -13%;
-        width: 154%;
-        height: 100%;
-        left: 77%;
-        top: 63%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
-}
-
-@media(max-width: 360px) {
-    .caption {
-        transition: .5s ease;
-        opacity: 0.5;
-        position: absolute;
-        margin-top: -13%;
-        width: 120%;
-        height: 100%;
-        left: 60%;
-        top: 63%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
 }
 
 
@@ -679,6 +582,10 @@ canvas {
         background: #3cb878;
         color: white;
     }
+
+.mt-10 {
+    margin-top: 10rem;
+}
 /*  *************** Contact Form *******************/
 input[type=text] {
     width: 100%;
@@ -815,7 +722,7 @@ input[type=email] {
     padding: 12% 8% 5% 8% !important;
     margin-top: 20px;
     margin-bottom: 2rem;
-    width: 550px;
+    width: 95% !important;
 }
 
 .m-p {
@@ -824,7 +731,7 @@ input[type=email] {
 }
 
 .forum-content {
-    width: 550px;
+    width: 100%;
     height: auto;
     padding: 5px 10px;
 }
@@ -840,6 +747,18 @@ input[type=email] {
 .remaining-content span {
     display: none;
 }
+
+.portfolio-section {
+    width: 33%;
+    float: left;
+    padding: 0;
+    position: relative;
+}
+
+
+
+
+
 /*===================== Media Queries ========================*/
 @media screen and (max-width: 800px) {
     .ar-ow {
@@ -850,7 +769,7 @@ input[type=email] {
         margin-bottom: 5%;
     }
 }
-
+/*=============== Media Query for the 768px ===============*/
 @media screen and (max-width: 768px) {
     .ar-ow {
         color: #ffffff;
@@ -860,6 +779,10 @@ input[type=email] {
         margin-bottom: 5%;
     }
     /*========= About Section  ============*/
+    .m-w-100 {
+        width: 100% !important;
+    }
+
     .media-text-center {
         text-align: center;
     }
@@ -885,7 +808,7 @@ input[type=email] {
         padding: 12% 8% 5% 8% !important;
         margin-top: 20px;
         margin-bottom: 2rem;
-        width: 661px;
+        width: 100% !important;
     }
 
     .mt-8 {
@@ -910,10 +833,14 @@ input[type=email] {
         justify-content: center;
     }
     /*============= Gallery Section ===============*/
+    .portfolio-section {
+        width: 50%;
+        margin-top: 0px;
+    }
+
     .imagebox {
-        position: relative;
-        height: 352px;
-        width: 400px;
+        width: 100%;
+        height: auto;
     }
 
     .caption {
@@ -929,7 +856,7 @@ input[type=email] {
         -ms-transform: translate(-50%, -50%);
     }
 }
-
+/*=============== Media Query for the 414px ===============*/
 @media screen and (max-width: 414px) {
     /*============ Slider Section ==================*/
 
@@ -941,6 +868,10 @@ input[type=email] {
         margin-bottom: 5%;
     }
     /*========= About Section  ============*/
+    .m-w-100 {
+        width: 100% !important;
+    }
+
     .media-text-center {
         text-align: center;
     }
@@ -966,7 +897,7 @@ input[type=email] {
         padding: 12% 8% 5% 8% !important;
         margin-top: 20px;
         margin-bottom: 2rem;
-        width: 380px;
+        width: 100% !important;
     }
 
     .mt-8 {
@@ -1009,6 +940,11 @@ input[type=email] {
 /*=============== Media Query for the 411px ===============*/
 @media screen and (max-width: 411px) {
 
+
+    .m-w-100 {
+        width: 100% !important;
+    }
+
     .media-text-center {
         text-align: center;
     }
@@ -1034,7 +970,7 @@ input[type=email] {
         padding: 12% 8% 5% 8% !important;
         margin-top: 20px;
         margin-bottom: 2rem;
-        width: 380px;
+        width: 100% !important;
     }
 
 
@@ -1047,7 +983,6 @@ input[type=email] {
         flex-wrap: wrap;
     }
 }
-
 /*=============== Media Query for the 375px ================*/
 @media screen and (max-width:375px ) {
     .media-text-center {
@@ -1098,7 +1033,6 @@ input[type=email] {
         margin-top: 5px;
     }*/
 }
-
 /*================= Media Query for s-5 360px ==================*/
 @media screen and (max-width:360px) {
     /*=========== Slider Section ===============*/
@@ -1114,6 +1048,9 @@ input[type=email] {
         margin-bottom: 5%;
     }
     /*============= About Us ============*/
+    .m-w-100 {
+        width: 100% !important;
+    }
 
     .media-text-center {
         text-align: center;
@@ -1140,7 +1077,7 @@ input[type=email] {
         padding: 12% 8% 5% 8% !important;
         margin-top: 20px;
         margin-bottom: 2rem;
-        width: 334px;
+        width: 100% !important;
     }
 
 
@@ -1212,5 +1149,52 @@ input[type=email] {
         margin-top: 20px;
         margin-bottom: 2rem;
         width: 480px;
+    }
+}
+
+@media screen and (max-width: 924px) and (orientation: landscape) {
+    .mt-28 {
+        margin-top: 8%;
+    }
+
+    .l-display {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+    .mt-28 {
+        margin-top: 8%;
+    }
+
+    .l-display {
+        display: block;
+    }
+
+    .slider-images {
+        height: 140vh;
+        width: 100%
+    }
+
+    .media-pera-width {
+        width: 32rem;
+    }
+
+    .media-pera2-width {
+        width: 25rem;
+    }
+
+    .back-ground-text {
+        width: 100% !important;
+    }
+
+    .portfolio-section {
+        width: 50%;
+        margin-top: 0px;
+    }
+
+    .imagebox {
+        width: 100%;
+        height: auto;
     }
 }
