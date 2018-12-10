@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="Bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="Bootstrap4/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <style>
+
+
+
+
+        body {
+            overflow-x: hidden;
+        }
+
+
+
+        .portfolio-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 50px;
+            color: #222222;
+        }
+
+        .portfolio-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            color: #434343;
+        }
+
+        #portfolio-navtab ul > li {
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .portfolio-active {
+            border-bottom: 1px solid #000000;
+        }
+
+        #portfolio ul {
+            list-style: none;
+            margin-bottom: 0;
+        }
+
+        #portfolio-navtab ul > li a {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            color: #888888;
+            text-transform: uppercase;
+        }
+
+        #portfolio-navtab hr {
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            width: 75%;
+        }
+
+        .view-more-btn {
+            font-family: "Lato", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            background: #ed1c24;
+            color: #f7f7f7;
+            border: none;
+            width: 210px;
+            height: 60px;
+            border-radius: 0;
+        }
+
+            .view-more-btn:hover {
+                background: #444444;
+                color: #ffffff;
+            }
+
+        #portfolio .btn-primary:not(:disabled):not(.disabled):active {
+            color: #fff;
+            background-color: #444444;
+            border-color: #444444;
+        }
+
+        #portfolio .btn-primary.focus, .btn-primary:focus {
+            box-shadow: 0 0 0 0.2rem #ffffff;
+        }
+
+        .portfolio-section {
+            width: 33%;
+            float: left;
+            padding: 0;
+            position: relative;
+        }
+
+        .portfolio-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start your project here-->
+    <section id="portfolio" class="scroll-section">
+        <div class="row">
+            <div class="col-md-12 text-center margin-top-95">
+                <h1 class="portfolio-heading">Portfolio</h1>
+            </div>
+            <div class="col-md-6 offset-md-3 text-center margin-top-30">
+                <p class="portfolio-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+        <div class="row margin-top-50">
+            <div class="col-md-12 text-center remove-lr-padding">
+                <div id="portfolio-navtab">
+                    <ul>
+                        <li id="all" class="portfolio-active filter" data-filter=".portfolio-section"><a>ALL</a></li>
+                        <li id="code" class="filter" data-filter=".web"><a>web</a></li>
+                        <li id="advertise" class="filter" data-filter=".app"><a>apps</a></li>
+                        <li id="brand" class="filter" data-filter=".icon"><a>icons</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div id="portfolio-wrapper">
+                    <div class="row margin-top-45">
+                        <!-- <div class="col-md-4 remove-lr-padding"> -->
+                        <div class="web portfolio-section hello">
+                            <span class="clearfix">
+                                <img src="images/Portfolio/port41.png" />
+                            </span>
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-md-4 remove-lr-padding"> -->
+                        <!-- </div> -->
+                        <!-- <div class="col-md-4 remove-lr-padding"> -->
+                        <div class="web portfolio-section hello">
+                            <img src="images/Portfolio/port42.png" />
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-md-4 remove-lr-padding"> -->
+                        <div class="app portfolio-section hello">
+                            <img src="images/Portfolio/port43.png" />
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-md-4 remove-lr-padding"> -->
+                        <div class="app portfolio-section hello">
+                            <img src="images/Portfolio/port44.png" />
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-md-4 remove-lr-padding"> -->
+                        <div class="icon portfolio-section hello">
+                            <img src="images/Portfolio/port5.png" />
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-md-4 remove-lr-padding"> -->
+                        <div class="icon portfolio-section hello">
+                            <img src="images/Portfolio/port46.png" />
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-md-4 remove-lr-padding"> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center margin-top-95">
+                        <button type="button" id="load-more" class="btn btn-primary view-more-btn">
+                            VIEW MORE &emsp;
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JQuery -->
+    <script type="text/javascript" src="Bootstrap4/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="Bootstrap4/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="Bootstrap4/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="Bootstrap4/js/mdb.min.js"></script>
+    <script>
+        (function ($) {
+
+            // Menu filer
+            $("#portfolio-navtab li").click(function () {
+                $("#portfolio-navtab li").removeClass('portfolio-active');
+                $(this).addClass('portfolio-active');
+
+                var selectedFilter = $(this).data("filter");
+                //  $("#menu-wrapper").fadeTo(100, 0);
+
+                $(".portfolio-section").fadeOut();
+
+                setTimeout(function () {
+                    $(selectedFilter).slideDown();
+                    //$("#menu-wrapper").fadeTo(300, 1);
+                }, 300);
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>
