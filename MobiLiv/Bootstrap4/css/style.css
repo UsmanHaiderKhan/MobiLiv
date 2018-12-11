@@ -68,6 +68,10 @@ header {
     line-height: 80px;
 }
 
+.padding-171 {
+    padding: 0 171px;
+}
+
 .font-face {
     font-family: 'ProximaNova Semibold';
 }
@@ -104,7 +108,7 @@ header nav ul li a {
 }
 
 .nav-pixel {
-    margin-right: 3rem;
+    margin-right: 1.5rem;
 }
 
 .first-leeter {
@@ -384,11 +388,7 @@ h1 {
     margin-left: 44%;
 }
 
-@media(max-width: 992px) {
-    .ml-45 {
-        margin-left: 34%;
-    }
-}
+
 
 #clients {
     background-color: #F6F6F6;
@@ -426,7 +426,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0px 200px;
 }
 
 
@@ -451,11 +450,6 @@ h1 {
     margin-left: 16rem;
 }
 
-@media(max-width: 992px) {
-    .ml-10 {
-        margin-left: 2rem;
-    }
-}
 
 .custome-button {
     width: 100%;
@@ -466,12 +460,7 @@ h1 {
     border-radius: 5px;
 }
 
-@media(max-width: 992px) {
-    .custome-button {
-        width: 96%;
-        margin-left: 1.7rem;
-    }
-}
+
 
 .chart {
     position: relative;
@@ -636,13 +625,34 @@ input[type=email] {
         box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     }
 
-@media (max-width: 992px) {
-    .textaera {
-        margin-top: 6%;
-    }
+
+
+/*=========== Contact us Line ::After ===========*/
+.below-line {
+    line-height: 1.5em;
+    color: #fff;
+    font-size: 48px;
+    position: relative;
 }
 
-
+    .below-line:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 110px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        margin: 0 2%;
+        border: 2px solid #d0d0d0;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        left: 41%;
+    }
 
 
 .flex-social {
@@ -755,11 +765,113 @@ input[type=email] {
     position: relative;
 }
 
+.custome-button:hover {
+    cursor: pointer;
+}
 
-
+.btn:focus {
+    outline: none;
+}
 
 
 /*===================== Media Queries ========================*/
+@media screen and (max-width: 1024px) {
+    .padding-171 {
+        padding: 0 60px;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .slider-images {
+        height: 60vh !important;
+    }
+
+    .live-conn h1 {
+        letter-spacing: 10px;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .ar-ow {
+        color: #ffffff;
+        z-index: 100;
+        margin-left: 48%;
+        position: absolute;
+        margin-bottom: 5%;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .padding-171 {
+        padding: 0px;
+    }
+
+    .slider-images {
+        height: 62vh !important;
+    }
+
+    .about {
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    .m-w-100 {
+        width: 48% !important;
+    }
+
+    .media-text-center {
+        text-align: center;
+    }
+
+    .media-pera-width {
+        width: 43rem;
+    }
+
+    .media-pad-right {
+        padding: 0 4% 0 4%;
+    }
+
+    .media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }
+
+    .media-pera2-width {
+        width: 35rem;
+    }
+
+    .back-ground-text {
+        background-color: #F6F6F6;
+        padding: 12% 8% 5% 8% !important;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        width: 100% !important;
+    }
+
+    .mt-8 {
+        margin-top: 2rem;
+    }
+
+    .media-block {
+        display: block;
+    }
+
+    .live-conn h1 {
+        letter-spacing: 15px;
+        font-size: 4rem;
+        font-weight: 500
+    }
+
+    .media-mt {
+        margin-top: 0;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .ar-ow {
         color: #ffffff;
@@ -768,9 +880,31 @@ input[type=email] {
         position: absolute;
         margin-bottom: 5%;
     }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 }
 /*=============== Media Query for the 768px ===============*/
 @media screen and (max-width: 768px) {
+    .media-left-menu {
+        float: initial;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .padding-171 {
+        padding: 10px;
+    }
+
+    .slider-images {
+        height: 60vh;
+    }
+
     .ar-ow {
         color: #ffffff;
         z-index: 100;
@@ -779,8 +913,13 @@ input[type=email] {
         margin-bottom: 5%;
     }
     /*========= About Section  ============*/
+    .about {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
     .m-w-100 {
-        width: 100% !important;
+        width: 48% !important;
     }
 
     .media-text-center {
@@ -832,6 +971,9 @@ input[type=email] {
     .media-justify-center {
         justify-content: center;
     }
+    /*================= Skills ==================*/
+
+
     /*============= Gallery Section ===============*/
     .portfolio-section {
         width: 50%;
@@ -847,7 +989,7 @@ input[type=email] {
         transition: .5s ease;
         opacity: 0.5;
         position: absolute;
-        margin-top: -11%;
+        margin-top: -10%;
         width: 100%;
         height: 100%;
         left: 50%;
@@ -858,7 +1000,26 @@ input[type=email] {
 }
 /*=============== Media Query for the 414px ===============*/
 @media screen and (max-width: 414px) {
+    .padding-171 {
+        padding: 0px;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .slider-images {
+        height: 75vh !important;
+    }
+
+    .md-font-size {
+        font-size: 40px;
+    }
     /*============ Slider Section ==================*/
+    /*.md-mt-5 {
+        margin-top: 8rem;
+    }*/
 
     .ar-ow {
         color: #ffffff;
@@ -918,17 +1079,20 @@ input[type=email] {
         justify-content: center;
     }
     /*============= Gallery Section ===============*/
-    .imagebox {
+    /*.imagebox {
         position: relative;
         height: 352px;
         width: 400px;
+    }*/
+    .portfolio-section {
+        width: 100%;
     }
 
     .caption {
         transition: .5s ease;
         opacity: 0.5;
         position: absolute;
-        margin-top: -11%;
+        margin-top: -10%;
         width: 100%;
         height: 100%;
         left: 50%;
@@ -936,10 +1100,26 @@ input[type=email] {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
+    /*====== Contact Section========*/
+    .below-line {
+        position: relative;
+    }
+
+        .below-line:after {
+            left: 36%;
+        }
+
+    .md-mobi-font-size {
+        font-size: 50px !important;
+    }
 }
 /*=============== Media Query for the 411px ===============*/
 @media screen and (max-width: 411px) {
 
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
     .m-w-100 {
         width: 100% !important;
@@ -975,7 +1155,7 @@ input[type=email] {
 
 
     .media-mt {
-        margin-top: 10px;
+        margin-top: 10px !important;
     }
 
     .flex-client {
@@ -983,8 +1163,28 @@ input[type=email] {
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 412px) {
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .media-mt {
+        margin-top: 10px !important;
+    }
+}
 /*=============== Media Query for the 375px ================*/
 @media screen and (max-width:375px ) {
+    .slider-images {
+        height: 69vh !important;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
     .media-text-center {
         text-align: center;
     }
@@ -1036,8 +1236,14 @@ input[type=email] {
 /*================= Media Query for s-5 360px ==================*/
 @media screen and (max-width:360px) {
     /*=========== Slider Section ===============*/
-    .nav-right {
-        margin-right: auto;
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .media-h-100 {
+        height: 100%;
     }
 
     .ar-ow {
@@ -1046,6 +1252,10 @@ input[type=email] {
         margin-left: 46%;
         position: absolute;
         margin-bottom: 5%;
+    }
+
+    .slider-images {
+        height: 85vh !important;
     }
     /*============= About Us ============*/
     .m-w-100 {
@@ -1101,15 +1311,19 @@ input[type=email] {
     /*============= Gallery Section ===============*/
     .imagebox {
         position: relative;
-        height: 352px;
-        width: 360px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .portfolio-section {
+        width: 100%;
     }
 
     .caption {
         transition: .5s ease;
         opacity: 0.5;
         position: absolute;
-        margin-top: -13%;
+        margin-top: -10%;
         width: 100%;
         height: 100%;
         left: 50%;
@@ -1117,18 +1331,319 @@ input[type=email] {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
+    /*====== Contact Section========*/
+    .below-line {
+        position: relative;
+    }
+
+        .below-line:after {
+            left: 33%;
+        }
 }
 
 
 
 /*============== Land scape Media Queries ==============*/
+/*@media screen and (max-width: 1366px) and (orientation: landscape) {
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .padding-171 {
+        padding: 0 70px;
+    }
+
+    .slider-images {
+        height: 60vh !important;
+    }
+
+    .about {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .media-text-center {
+        text-align: center;
+    }
+
+
+    .media-pera-width {
+        width: 28rem;
+    }
+
+
+    */
+/*.media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }*/
+
+/*.media-pera2-width {
+    width: 20rem;
+}
+
+.back-ground-text {
+    background-color: #F6F6F6;
+    padding: 12% 8% 5% 8% !important;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.live-conn h1 {
+    letter-spacing: 10px;
+}
+}
+*/
+
+
+
+
+
+@media screen and (max-width: 1134px) and (orientation: landscape) {
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .padding-171 {
+        padding: 0;
+    }
+
+    .slider-images {
+        height: 90vh !important;
+    }
+
+    .about {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .media-text-center {
+        text-align: center;
+    }
+
+
+    .media-pera-width {
+        width: 28rem;
+    }
+
+
+
+    /*.media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }*/
+
+    .media-pera2-width {
+        width: 20rem;
+    }
+
+    .back-ground-text {
+        background-color: #F6F6F6;
+        padding: 12% 8% 5% 8% !important;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .live-conn h1 {
+        letter-spacing: 10px;
+    }
+}
+
+@media screen and (max-width: 924px) and (orientation: landscape) {
+    .mt-28 {
+        margin-top: 8%;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .l-display {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 846px) and (orientation: landscape) {
+    .padding-171 {
+        padding: 0px;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .slider-images {
+        height: 160vh !important;
+    }
+
+    .about {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .media-text-center {
+        text-align: center;
+    }
+
+
+    .media-pera-width {
+        width: 20rem;
+    }
+
+
+
+    .media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }
+
+    .media-pera2-width {
+        width: 31rem;
+    }
+
+    .back-ground-text {
+        background-color: #F6F6F6;
+        padding: 12% 8% 5% 8% !important;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 823px) and (orientation: landscape) {
+    .m-w-100 {
+        width: 100% !important;
+    }
+
+    .m-w-100 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    .padding-171 {
+        padding: 0px;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .m-w-100 {
+        width: 100% !important;
+    }
+
+    .slider-images {
+        height: 160vh !important;
+    }
+
+    .about {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .media-text-center {
+        text-align: center;
+    }
+
+
+    .media-pera-width {
+        width: 20rem;
+    }
+
+
+
+    .media-pad-r-l {
+        padding: 0 8% 0 4%;
+    }
+
+    .media-pera2-width {
+        width: 31rem;
+    }
+
+    .back-ground-text {
+        background-color: #F6F6F6;
+        padding: 12% 8% 5% 8% !important;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+    .mt-28 {
+        margin-top: 8%;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .m-w-100 {
+        width: 100% !important;
+    }
+
+    .slider-images {
+        height: 60vh;
+    }
+
+    .l-display {
+        display: block;
+    }
+
+    .slider-images {
+        height: 140vh;
+        width: 100%
+    }
+
+    .media-pera-width {
+        width: 30rem;
+    }
+
+    .media-pera2-width {
+        width: 25rem;
+    }
+
+    .back-ground-text {
+        width: 100% !important;
+    }
+
+    .portfolio-section {
+        width: 50%;
+        margin-top: 0px;
+    }
+
+    .imagebox {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 731px) and (orientation: landscape) {
+    .slider-images {
+        height: 140vh !important;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .m-w-100 {
+        width: 100% !important;
+    }
+
     .media-text-center {
         text-align: center;
     }
 
     .media-pera-width {
-        width: 32rem;
+        width: 100% !important;
     }
 
     .media-pad-right {
@@ -1152,19 +1667,18 @@ input[type=email] {
     }
 }
 
-@media screen and (max-width: 924px) and (orientation: landscape) {
+@media screen and (max-width: 667px) and (orientation: landscape) {
     .mt-28 {
         margin-top: 8%;
     }
 
-    .l-display {
-        display: block;
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
     }
-}
 
-@media screen and (max-width: 736px) and (orientation: landscape) {
-    .mt-28 {
-        margin-top: 8%;
+    .m-w-100 {
+        width: 100% !important;
     }
 
     .l-display {
@@ -1172,12 +1686,12 @@ input[type=email] {
     }
 
     .slider-images {
-        height: 140vh;
+        height: 160vh;
         width: 100%
     }
 
     .media-pera-width {
-        width: 32rem;
+        width: 30rem;
     }
 
     .media-pera2-width {
@@ -1190,6 +1704,61 @@ input[type=email] {
 
     .portfolio-section {
         width: 50%;
+        margin-top: 0px;
+    }
+
+    .imagebox {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+    .padding-171 {
+        padding: 0px;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .mt-28 {
+        margin-top: 8%;
+    }
+
+    .l-display {
+        display: block;
+    }
+
+    .slider-images {
+        height: 160vh !important;
+        width: 100%
+    }
+
+    .m-w-100 {
+        width: 100% !important;
+    }
+
+    .media-pera-width {
+        width: 100%;
+    }
+
+    .media-pera2-width {
+        width: 25rem;
+    }
+
+    .back-ground-text {
+        width: 100% !important;
+    }
+
+    .portfolio-section {
+        width: 33%;
         margin-top: 0px;
     }
 
