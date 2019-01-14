@@ -45,7 +45,6 @@
     scroll-behavior: smooth;
 }
 
-
 .nav-color {
     background-color: #0A0E18;
 }
@@ -80,8 +79,6 @@ header {
 ul {
     list-style: none;
 }
-
-
 
     ul li {
         display: inline-block;
@@ -136,12 +133,6 @@ header nav ul li a {
     background-position: center;
 }
 
-/*.over-effect {
-    opacity: 1;
-    height: 654px;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-}*/
 .over-effect {
     background: rgba(0,0,0,1);
     opacity: .4;
@@ -199,7 +190,6 @@ h1 {
     text-decoration: none;
 }
 
-
 .slider-font-family {
     font-family: 'MyriadPro-Regular';
     font-size: 60px;
@@ -240,8 +230,6 @@ h1 {
     margin-left: 4rem !important;
 }
 
-
-
 .ar-ow {
     color: #ffffff;
     z-index: 100;
@@ -249,8 +237,6 @@ h1 {
     position: absolute;
     margin-bottom: 5%;
 }
-
-
 
 .mt-16 {
     margin-top: 12%;
@@ -265,7 +251,6 @@ h1 {
     font-size: 4rem;
     font-weight: 500
 }
-
 
 #services {
     background-color: #F6F6F6;
@@ -342,7 +327,6 @@ h1 {
     border-radius: 3px;
 }
 
-
 .text-adj {
     margin-left: 7%;
     font-size: 12px;
@@ -388,8 +372,6 @@ h1 {
     margin-left: 44%;
 }
 
-
-
 #clients {
     background-color: #F6F6F6;
     height: auto;
@@ -428,8 +410,6 @@ h1 {
     justify-content: space-evenly;
 }
 
-
-
 .small-text {
     color: #e6e8ea;
 }
@@ -450,7 +430,6 @@ h1 {
     margin-left: 16rem;
 }
 
-
 .custome-button {
     width: 100%;
     height: 42px;
@@ -459,8 +438,6 @@ h1 {
     border: none;
     border-radius: 5px;
 }
-
-
 
 .chart {
     position: relative;
@@ -472,14 +449,11 @@ h1 {
     line-height: 156px;
 }
 
-
-
 canvas {
     position: absolute;
     top: 0px;
     left: 0px;
 }
-
 
 /************* Portfolio Gallery ***************/
 
@@ -497,9 +471,6 @@ canvas {
     width: 100%;
 }
 
-
-
-
 .caption {
     transition: .5s ease;
     opacity: 0.5;
@@ -513,14 +484,11 @@ canvas {
     -ms-transform: translate(-50%, -50%);
 }
 
-
-
 .imagebox:hover .caption {
     opacity: 0.9;
     background: rgba(76, 175, 80, 2);
     padding: 30px;
 }
-
 
 .text {
     opacity: 0;
@@ -624,9 +592,6 @@ input[type=email] {
     .textaera:focus {
         box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     }
-
-
-
 /*=========== Contact us Line ::After ===========*/
 .below-line {
     line-height: 1.5em;
@@ -654,7 +619,6 @@ input[type=email] {
         left: 41%;
     }
 
-
 .flex-social {
     display: flex;
     flex-wrap: wrap;
@@ -673,8 +637,6 @@ input[type=email] {
 .social-icon {
     padding: 0px 228px;
 }
-
-
 
 .single-nav {
     display: flex;
@@ -752,8 +714,6 @@ input[type=email] {
     text-align: justify;
 }
 
-
-
 .remaining-content span {
     display: none;
 }
@@ -772,8 +732,6 @@ input[type=email] {
 .btn:focus {
     outline: none;
 }
-
-
 /*===================== Media Queries ========================*/
 @media screen and (max-width: 1024px) {
     .padding-171 {
@@ -1341,8 +1299,6 @@ input[type=email] {
         }
 }
 
-
-
 /*============== Land scape Media Queries ==============*/
 /*@media screen and (max-width: 1366px) and (orientation: landscape) {
     .row {
@@ -1395,10 +1351,6 @@ input[type=email] {
 }
 }
 */
-
-
-
-
 
 @media screen and (max-width: 1134px) and (orientation: landscape) {
     .row {
@@ -1554,7 +1506,6 @@ input[type=email] {
     .media-pera-width {
         width: 20rem;
     }
-
 
 
     .media-pad-r-l {
@@ -1765,5 +1716,18 @@ input[type=email] {
     .imagebox {
         width: 100%;
         height: auto;
+    }
+
+    .caption {
+        transition: .5s ease;
+        opacity: 0.5;
+        position: absolute;
+        margin-top: -10%;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 63%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
     }
 }
